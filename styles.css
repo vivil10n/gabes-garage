@@ -372,3 +372,16 @@ header p {
     max-height: 95px;
   }
 }
+
+footer {
+  position: fixed;
+  bottom: 12px;
+  right: 16px;
+  z-index: 20;
+
+  font-family: "Comic Sans MS", cursive;
+  font-size: 12px;
+  color: #fffce8;
+
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}

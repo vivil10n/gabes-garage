@@ -5,7 +5,7 @@
 body {
   margin: 0;
   background: #999;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
   overflow: hidden;
 }
 
@@ -379,7 +379,7 @@ footer {
   right: 16px;
   z-index: 20;
 
-  font-family: "Comic Sans MS", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
   font-size: 12px;
   color: #fffce8;
 

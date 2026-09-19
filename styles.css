@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "Gabe Comic";
+  src: url("./fonts/comic-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gabe Comic";
+  src: url("./fonts/comic-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gabe Comic";
+  src: url("./fonts/comic-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gabe Comic";
+  src: url("./fonts/comic-hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,8 +37,13 @@
 body {
   margin: 0;
   background: #999;
-  font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
+  font-family: "Gabe Comic", sans-serif;
+  font-weight: 400;
   overflow: hidden;
+}
+
+button {
+  font-family: "Gabe Comic", sans-serif;
 }
 
 header {
@@ -19,8 +56,9 @@ header {
 
 h1 {
   margin: 0;
+  font-family: "Gabe Comic", sans-serif;
   font-size: clamp(50px, 6vw, 90px);
-  font-weight: normal;
+  font-weight: 400;
   color: #ffff78;
 
   text-shadow:
@@ -291,18 +329,20 @@ header p {
   text-align: center;
   margin: 25px 0 0;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .tag h2 {
   text-align: center;
   font-size: 38px;
   margin: 5px 0 20px;
+  font-weight: 700;
 }
 
 #message {
   text-align: center;
   font-size: 17px;
+  line-height: 1.5;
 }
 
 .from {
@@ -320,7 +360,24 @@ header p {
 
 .gabe {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+
+/* footer */
+
+footer {
+  position: fixed;
+  bottom: 12px;
+  right: 16px;
+  z-index: 20;
+
+  font-family: "Gabe Comic", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+
+  color: #fffce8;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 
 
@@ -338,14 +395,14 @@ header p {
   }
 
   h1 {
-    font-size: 55px;
+    font-size: clamp(38px, 11vw, 55px);
   }
 
   .garage {
     height: auto;
     min-height: 100vh;
 
-    padding: 250px 15px 40px;
+    padding: 250px 15px 65px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -371,17 +428,10 @@ header p {
   .paircars img {
     max-height: 95px;
   }
-}
 
-footer {
-  position: fixed;
-  bottom: 12px;
-  right: 16px;
-  z-index: 20;
-
-  font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
-  font-size: 12px;
-  color: #fffce8;
-
-  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  footer {
+    bottom: 8px;
+    right: 10px;
+    font-size: 11px;
+  }
 }
